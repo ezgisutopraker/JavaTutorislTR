@@ -1,0 +1,24 @@
+package TASK06;
+
+public class _04_if_else_if_statement4 {
+
+    public static void main(String[] args) {
+
+     /* double1 ve double2 isimli iki tane double oluşturulmuştur.
+        Eğer double1, double2'dan büyük ise "double 1 is greater than double 2" yazdırınız.
+        Eğer double1, double2'dan küçük ise "double 1 is smaller than double 2" yazdırınız. */
+
+
+        double num1 = 26.8;
+        double num2 = 26.7;
+
+        if (num1 > num2) {
+
+            System.out.println("double 1 is greater than 2");
+
+        }else System.out.println("double 1 is smaller than 2");
+
+
+
+    }
+}
