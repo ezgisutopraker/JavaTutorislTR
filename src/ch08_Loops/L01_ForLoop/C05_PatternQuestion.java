@@ -1,4 +1,4 @@
-package ch08_Loops;
+package ch08_Loops.L01_ForLoop;
 
 public class C05_PatternQuestion {
     public static void main(String[] args) {
@@ -25,6 +25,9 @@ A B C D E F
             System.out.println(); //hayalet (dummy) kod - boş kod işi sadece her içteki döngüden sonra alt satıra geçirmek
 
         }
+
+
+
 
     }
 }
