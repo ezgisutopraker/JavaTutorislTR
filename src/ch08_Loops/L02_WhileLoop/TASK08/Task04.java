@@ -8,7 +8,17 @@ public class Task04 {
 
 		 */
 
-		
+		int sayi =100;
+
+		while (sayi < 1000){
+			if (sayi %4 == 0 && sayi%6==0){
+				System.out.println("sayi = " + sayi);
+			}
+			sayi++;
+
+		}
+
+
 		
 
 		
