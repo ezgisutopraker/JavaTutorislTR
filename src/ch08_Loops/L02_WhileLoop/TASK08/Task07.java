@@ -6,21 +6,36 @@ public class Task07 {
     public static void main(String[] args) {
         // task-> girilen  5 sayının  en büyüğünü print den code create eediniz
 
-        Scanner input = new Scanner(System.in);
 
-        int girilen = 0;
+                Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int number1  = scanner.nextInt();
 
 
+                int count = 0;
 
+                while (count < 4) {
+                    System.out.print("Bir sayı girin: ");
+                    int number = scanner.nextInt();
 
-            System.out.println("sayı giriniz");
-            int sayi= input.nextInt();
+                    if (number > number1) {
+                        number1 = number;
+                    }
 
-            girilen++;
+                    count++;
+                }
 
+                System.out.println("En büyük sayı: " + number1);
+            }
         }
 
 
 
-    }
+
+
+
+
+
+
+
 

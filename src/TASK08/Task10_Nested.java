@@ -1,5 +1,7 @@
 package TASK08;
 
+import java.util.Scanner;
+
 public class Task10_Nested {
 
     public static void main(String[] args) {
@@ -23,9 +25,15 @@ public class Task10_Nested {
             }
             System.out.println();
         }
-      
 
 
 
     }
-}
+
+
+
+
+
+
+    }
+

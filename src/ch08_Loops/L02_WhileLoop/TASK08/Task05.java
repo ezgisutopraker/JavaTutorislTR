@@ -14,26 +14,46 @@ public class Task05 {
 
 				Scanner input = new Scanner(System.in);
 
-				System.out.print("İsim: ");
+				System.out.print("İsim soyisim: ");
 				String isim = input.nextLine();
 
-				System.out.print("Soyisim: ");
-				String soyisim = input.nextLine();
 
-				char ilkHarf = isim.charAt(0);
-				char sonHarf = soyisim.charAt(soyisim.length() - 1);
+			//	int harfSayi = isim.length()-1;
+			//	int i=0;
+//
+			//	while (i <= harfSayi) {
+			//		String harf = String.valueOf(isim.charAt(i));
+			//		//if (!(harf.equals(" "))){
+			//			System.out.print(isim.charAt(i)+ " ");
+//
+			//			i++;
+//
+			//	}
+//
+		System.out.println("İsim: ");
+		String isim1 = input.nextLine();
+		System.out.print("Soyisim: ");
+		String soyisim = input.nextLine();
 
-				int baslangic = (int) ilkHarf;
-				int bitis = (int) sonHarf;
+		int i = 0;
+		int j = 0;
 
-				System.out.print("Harfler: ");
-				int i = baslangic;
-				while (i <= bitis) {
-					System.out.print((char) i + " ");
-					i++;
-				}
-			}
+		while (i < isim1.length()) {
+			System.out.print(isim.charAt(i) + " ");
+			i++;
 		}
+
+		while (j < soyisim.length()) {
+			System.out.print(soyisim.charAt(j) + " ");
+			j++;
+		}
+
+
+	}
+}
+
+
+
 
 
 
