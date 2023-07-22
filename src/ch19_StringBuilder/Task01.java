@@ -1,6 +1,6 @@
 package ch19_StringBuilder;
 
-import java.util.Locale;
+
 
 public class Task01 {
     public static void main(String[] args) {
