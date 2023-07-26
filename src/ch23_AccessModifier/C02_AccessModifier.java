@@ -1,5 +1,7 @@
 package ch23_AccessModifier;
 
+import ch23_AccessModifier.newpackage.C03_AccessModifier;
+
 public class C02_AccessModifier {
     public static void main(String[] args) {
 
@@ -14,6 +16,17 @@ public class C02_AccessModifier {
         System.out.println("obj1 = " + obj1);
         obj1.protectedMethod();
 
+        C01_AccessModifier obj2 = new C01_AccessModifier();
+
+        // System.out.println("obj2.objePrivate = " + obj2.objePrivate);
+
+        C03_AccessModifier obj3 = new C03_AccessModifier();
+
+        System.out.println("obj3.publicName = " + obj3.publicName);
+
+        //obj3.protectedName = "";
+        //'protectedName' has protected access in
+        // 'ch23_AccessModifier.newpackage.C03_AccessModifier'
 
 
     }

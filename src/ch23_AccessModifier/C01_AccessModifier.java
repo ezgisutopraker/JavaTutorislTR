@@ -37,6 +37,7 @@ public class C01_AccessModifier {
         this.privateYas = privateYas;
         this.protedtedYas = protedtedYas;
     }
+    // C01_AccessModifier objePrivate = new C01_AccessModifier(25,55);
 
     public C01_AccessModifier(int privateYas, int protedtedYas, int publicYas) {
         this.privateYas = privateYas;
@@ -61,6 +62,7 @@ public class C01_AccessModifier {
                 ", publicYas=" + publicYas +
                 '}';
     }
+
 
     public static void main(String[] args) {
 
