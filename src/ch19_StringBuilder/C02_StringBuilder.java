@@ -75,6 +75,23 @@ public class C02_StringBuilder {
         //istenen aralıktaki değeri siler ve yerine istenen Stringi ekler
         System.out.println("sb3.replace(7,9,\"meşgul\") = " + sb3.replace(7, 9, "meşgul")); //rume;Symeşgul hanımel
 
+        StringBuilder tb2= new StringBuilder("AVATAR");
+        tb2.subSequence(1,5);
+        System.out.println("tb2 = " + tb2);
+        tb2.reverse();
+        System.out.println("tb2 = " + tb2);
+        tb2.deleteCharAt(2);
+        System.out.println("tb2 = " + tb2);
+
+        StringBuilder tb1 = new StringBuilder(2 + "apple" + 3 + 8+ "banana");
+        String isim = "Elly";
+        tb1.append(isim,1,3);
+        System.out.println("tb1 = " + tb1);
+        tb1.delete(3,5);
+        System.out.println("tb1 = " + tb1);
+
+
+
 
     }
 
