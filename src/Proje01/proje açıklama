@@ -1,0 +1,72 @@
+PROJE 1- TAŞ KAĞIT MAKAS OYUNUNA BENZER SİLAH OYUNU
+1-Proje Açıklaması: Proje, "Taş-Kağıt-Makas Oyunu" temalı bir oyun olacak.
+Oyuncular,   farklı   silahlarla   donatılacak   ve   belirli   kurallar   çerçevesinde
+birbirleriyle düello yapacaklar. Her silahın farklı hasar ve avantajları olacak.
+
+1- public class Main metodu
+Bu metotta "Abhay" isimli bir oyuncu nesnesini temsil eder. Bu oyuncunun
+silahı   "sword"   ve   sağlık   durumu   100'dür.   Main   metodunun   sonunda
+oyuncunun adını, silahını ve sağlık durumunu ekranda gösteriniz.
+
+public class Main {
+    public static void main(String[] args) {
+...
+}
+
+2- public class Player1 metodu içinde 3 tane metod var
+public class Player1 {
+    private String name;
+    private String weapon;
+    private int health;
+....
+}
+
+1-public void damageByGun1(): Bu metot, oyuncunun "Gun 1" adlı silahtan
+hasar almasını simüle eder. Oyuncunun sağlık durumu 30 azaltılır ve sağlık
+durumu   0'ın   altına   düşerse   0   olarak   ayarlanır.   Ayrıca,   oyuncunun   sağlık
+durumu   0   olduğunda,   oyuncunun   adını   ve   "is   dead"   mesajını   ekrana
+yazdırır. Bu metot, oyuncunun "Gun 1" adlı silahtan aldığı hasarı ve sağlık
+durumunu güncellemek için kullanılır.
+
+2-public void damageByGun2(): Bu metot, oyuncunun "Gun 2" adlı silahtan
+hasar almasını simüle eder. Oyuncunun sağlık durumu 50 azaltılır ve sağlık
+durumu   0'ın   altına   düşerse   0   olarak   ayarlanır.   Ayrıca,   oyuncunun   sağlık
+durumu   0   olduğunda,   oyuncunun   adını   ve   "is   dead"   mesajını   ekrana
+yazdırır. Bu metot, oyuncunun "Gun 2" adlı silahtan aldığı hasarı ve sağlık
+durumunu güncellemek için kullanılır.
+
+3-public void heal(): Bu metot, oyuncunun sağlık durumunu iyileştirir. Eğer
+oyuncunun sağlık durumu 0 veya daha düşükse, "Player is dead. Heal not
+possible" mesajı yazdırılır ve iyileştirme işlemi gerçekleşmez. Aksi takdirde,
+sağlık durumu 100 olarak ayarlanır ve "Health is " + this.health şeklinde
+bir mesaj ekrana yazdırılır. Bu metot, oyuncunun sağlık durumunu kontrol
+eder ve sağlık durumu uygunsa iyileştirme işlemini gerçekleştirir.
+
+3- public class Player2 extends Player1 metodu içinde 3 tane metod vardır.
+Player2 sınıfı, Player1 sınıfından türetilmiştir ve Player1 sınıfının metotlarını
+değiştirerek   veya   üzerine   yazarak   farklı   davranışlar   ekler.   Player2   sınıfı,
+Player1 sınıfının metotlarını kullanırken hasar alma ve iyileşme işlemlerini
+zırhın etkisine göre değiştirir.
+public class Player2 extends Player1 {
+    private int health;
+    private boolean armour;
+....
+}
+1-@Override   public   void   damageByGun1():   Bu   metot,   Player1   sınıfında
+bulunan   damageByGun1()   metotunu   geçersiz   kılar   (override   eder).   Yani,
+Player2   sınıfında   damageByGun1()   metodu   farklı   bir   şekilde   çalışır.   Eğer
+oyuncunun zırhı (armour) aktifse (true), sağlık durumu 20 azaltılır; zırh aktif
+değilse sağlık durumu normalde 30 azaltılır. Oyuncunun sağlık durumu 0'ın
+altına düşerse 0 olarak ayarlanır ve oyuncunun ölüp ölmediği kontrol edilir.
+
+2-@Override   public   void   damageByGun2():   Bu   metot,   Player1   sınıfında
+bulunan   damageByGun2()   metotunu   geçersiz   kılar   (override   eder).   Yani,
+Player2   sınıfında   damageByGun2()   metodu   farklı   bir   şekilde   çalışır.   Eğer
+oyuncunun zırhı aktifse, hasar miktarı 40 azaltılır; zırh aktif değilse hasar
+miktarı normalde 50 azaltılır. Oyuncunun sağlık durumu 0'ın altına düşerse
+0 olarak ayarlanır ve oyuncunun ölüp ölmediği kontrol edilir.
+
+3-@Override public void heal(): Bu metot, Player1 sınıfında bulunan heal()
+metotunu   geçersiz   kılar   (override   eder).   Yani,   Player2   sınıfında   heal()
+metodu   aynı   şekilde   çalışır   ve   oyuncunun   sağlık   durumu   100   olarak
+ayarlanır
